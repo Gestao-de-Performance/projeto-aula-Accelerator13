@@ -1,37 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandre</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html>
+    <head>
+        <!--Meta dados e informações invisiveis ao usuario-->
+
+        <link rel="stylesheet" href="style.css">
+
+        
+    </head>
+
     <body>
-        <h1 id="titulo">Ola Mundo</h1>
-        <h2>Ola Mundo</h2>
-        <h3>Ola Mundo</h3>
-        <div><h2>Ola Mundo</h2></div>
-        <a href="https://google.com" target="_blank">google</a>
-        <img width="280" src="/ESTAMOS OFFLINE.png">
-        <h4>Ola Mundo</h4>
-        <h5>Ola Mundo</h5>
-        <h6>Ola Mundo</h6>
-        <p>Paragrafo</p>
-        <span>texto</span>
-        <form>
-            <form method="post">
-                <h2>Formulário</h2>
-            <div>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+        <!--As informações visiveis ao usuario-->
+        <header>
+            <!--Cabeçalho do site-->
+        </header>
+
+        <main>
+            <section id="titulo">
+                <div>
+                     <!--Corpo do site-->
+                    <h1 class="corTexto tamanhoTexto">Título Principal do site</h1> <!--Pode ter apenas UM H1 por página-->
+
+                    <h2>Subtitulo do site</h2> <!--Do h2 ao h6 são utilizados para subtitulos do site, podem conter vários dentro dele-->
+                    <div class="bloco">
+                        <!--Tag para criar um bloco de codigo-->
+                        <h2 class="corTexto subtituloBloco">Subtitulo do bloco</h2>
+                        <h3 class="subtituloBlocoDois">Subtitulo do bloco 2</h3>
+                    </div>
+                </div>
+            </section>
+
+            <div>                          
+                <div>
+                    <h2 class="corTexto">Subtitulo do bloco</h2>
+
+                    <img src="img/gestao_performance.png" alt="Texto alternativo">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia natus aut quos laboriosam? Odio accusamus, quae animi nihil neque, soluta veritatis debitis perspiciatis veniam porro nulla voluptatum corporis possimus?</span> 
+                    <span>oi</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae delectus! Voluptatum aperiam incidunt quos cupiditate ad? Quam labore mollitia harum? Incidunt odit accusantium sit officia atque qui exercitationem ratione.</p>
+                    <p>oi</p>
+                </div>
             </div>
 
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email">
-            </div>
+            <aside>
+                <a>item menu 1</a>
+                <a>item menu 2</a>
+            </aside>
+
+            <article>
+
+            </article>
+
+            <form method="post">
+                <h2>Formulário</h2>
+
+                <div>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+
                 <button type="submit">Enviar</button>
-        </form>
+            </form>
+
             <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>
@@ -43,5 +79,11 @@
                 <li>Item 2</li>
                 <li>Item 3</li>
             </ol>
+        </main>
+
+        
+        <footer>
+            <!--Rodapé-->
+        </footer>
     </body>
 </html>

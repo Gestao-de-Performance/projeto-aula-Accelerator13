@@ -4,6 +4,33 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color:black;
+    color: white;
 }
+
+.corTexto{
+    color:red;
+}
+
+.tamanhoTexto{
+    font-size: 3rem;
+}
+
+.bloco{
+    display: flex;
+    background-color: blue;
+    padding: 10px;
+    width: 50vw;
+}
+
+.subtituloBloco{
+  width: 50%;
+  background-color: green;
+}
+
+#titulo{
+  color:blueviolet;  
+}
+
+/*Comentário*/
+
