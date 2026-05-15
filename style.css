@@ -1,0 +1,182 @@
+:root{
+    --cor-botao-nav: #5A13B4;
+    --cor-buscar: #5913b471;
+    --cor-textos: #3B1270;
+    --cor-botao-inscreverse: #8E35FF;
+    --cor-fundo-cursos: #3B1270;
+    --cor-texto-cursos: white;
+    --cor-fundo-nome-cursos: #ffffff43;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    border: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.marginLateraisSite{
+    margin: 0 10vw;
+}
+
+.marginSupInfSite{
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.gap10{
+    gap: 10%;
+}
+
+.gap5{
+    gap: 5%;
+}
+
+/*Header*/
+
+nav, .flex{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    justify-content: space-between;
+}
+
+.corBotoesNav{
+    color: var(--cor-botao-nav);
+}
+
+.formBuscar{
+    border: 1px solid var(--cor-buscar);
+    padding: 1% 5%;
+    display: flex;
+}
+
+.corPlaceholder::placeholder{
+    color: var(--cor-buscar);
+}
+
+.botaoAmbiVir{
+    white-space: nowrap;
+}
+
+/*
+Mobile: 414px
+Tablet: 768px
+Desktop: 1440px
+
+Min Mobile: 320px
+Max Mobile: 767px
+*/
+@media (max-width: 1024px){
+
+}
+
+@media(max-width: 767px){
+    nav, .flex{
+        flex-wrap: wrap;
+    }
+}
+
+/*Fim Header*/
+
+/*Apresentação*/
+h1{
+    color: var(--cor-textos);
+    opacity: 0.7;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.containerApresentacao{
+    align-items: flex-end;
+}
+
+.subtituloSite{
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--cor-textos);
+}
+
+.textoApresentacao{
+    max-width: 236px;
+    color: var(--cor-textos);
+}
+
+@media (max-width: 767px){
+    .subtituloSite{
+        font-size: 3rem;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+
+    .imgApresentacao{
+        display: none;
+    }
+}
+/*Fim Apresentação*/
+
+/*Cursos*/
+.corFundoCursos{
+    background-color:var(--cor-fundo-cursos);
+}
+
+.containerEscolhaCursos{
+    margin-top: 10vw;
+}
+
+.personagemEscolhaCursos{
+    position: relative;
+    top: -5vw;
+}
+
+.textoBranco{
+    color: var(--cor-texto-cursos);
+}
+
+.tituloEscolhaCursos{
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+}
+
+.containerCursos{
+    background-color: var(--cor-fundo-nome-cursos);
+    padding: 2% 5%;
+    justify-content: space-between;
+}
+
+.textoGraduacao{
+    font-size: 0.6rem;
+}
+
+.nomeCurso{
+    font-size: 0.7rem;
+}
+
+.softSkillsCursos{
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.marginSoftSkills{
+    margin: 5% 0;
+}
+/*Fim cursos*/
